@@ -40,5 +40,6 @@ def getBestOutliersThreshold(df, data_loss, range_ = 100):
         new_size = dropOutliers(df, i).shape[0]
         if (1 - new_size/original) <= data_loss:
             return i
-        
+    
+    return i
     raise Exception(f'No thresholds found for floats up to {range_} to meet a minimum of {data_loss} data loss.')

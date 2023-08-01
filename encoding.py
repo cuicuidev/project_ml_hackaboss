@@ -69,7 +69,7 @@ def oneHotEncoding(df):
 def getBestEncoding(series, target):
     scaler = MinMaxScaler()
     
-    frequency_encoding = series.map(series.value_counts(normalize = True))
+    frequency_encoding = series.map(series.value_counts(normalize = False))
     frequency_encoding = pd.Series(scaler.fit_transform(frequency_encoding.values.reshape(-1, 1)).flatten(), index=frequency_encoding.index)
     
     target_mean_encoding = series.map(target.groupby(series).mean())
