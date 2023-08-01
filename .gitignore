@@ -1,0 +1,7 @@
+/venv/
+*.csv
+*.txt
+*.pkl
+/.vscode/
+/__pycache__/
+.gitignore
