@@ -1,3 +1,6 @@
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+
 def encode(df, target_series, encoding, custom_encodings):
     df = df.copy()
     

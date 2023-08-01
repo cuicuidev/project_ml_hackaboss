@@ -1,3 +1,5 @@
+import pandas as pd
+
 def splitNumCat(df):
     """
     Recibe un DataFrame df.

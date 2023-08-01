@@ -1,3 +1,5 @@
+import numpy as np
+
 def dropOutliers(df, threshold):
     """
     Recibe un DataFrame numérico data_frame y un float threshold (por defecto = 2.0).

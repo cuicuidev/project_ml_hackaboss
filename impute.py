@@ -1,3 +1,12 @@
+def modeImputer(df):
+    raise Exception('modeImputer is not implemented')
+
+def meanImputer(df):
+    raise Exception('meanImputer is not implemented')
+
+def medianImputer(df):
+    raise Exception('medianImputer is not implemented')
+
 def imputeCat(df, imputer):
     """
     Recibe un DataFrame categórico df y una string imputer.
